@@ -1,0 +1,44 @@
+1. Scan Type
+Command used: Likely nmap -sS 192.168.1.0/24 (TCP SYN scan).
+
+2. IPs and Open Ports Found
+Here are the discovered hosts and their open ports:
+
+🔹 Host: 192.168.1.1
+
+Open Ports:
+
+80/tcp – HTTP
+
+443/tcp – HTTPS
+
+Service Implication:
+
+Web interface, possibly router login/admin panel.
+
+🔹 Host: 192.168.1.100
+
+Open Ports:
+
+22/tcp – SSH
+
+139/tcp – NetBIOS-SSN
+
+445/tcp – Microsoft-DS (SMB file sharing)
+
+Service Implication:
+
+SSH access (likely remote login to a Linux device).
+
+File sharing or printer services (Windows/Samba).
+
+🔹 Host: 192.168.1.103
+
+Open Ports:
+
+3389/tcp – Remote Desktop Protocol (RDP)
+
+Service Implication:
+
+Windows remote desktop access.
+
